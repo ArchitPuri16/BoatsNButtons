@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>
+        Boats n Buttons   
+    </title>
+    <link href="styles.css" rel="stylesheet">
+
+     <script>
+        function Race()   {
+            
+            var xBoatNo = document.getElementById("listTeam").selectedIndex + 1;
+            var xBoat = "divBoat" + xBoatNo;
+            
+            //alert("xboat="+xBoat);
+            
+            var varBoat = document.getElementById(xBoat);
+            var currentPosition = varBoat.style.left;
+            
+            //alert(currentPosition);
+            
+            if (currentPosition == "") {
+                currentPosition = "180px";
+            }
+                        
+            
+            alert(currentPosition.indexOf("px")); //3
+            
+            alert(currentPosition.substring(0, currentPosition.indexOf("px"))); //180
+
+            var newpos = eval(currentPosition.substring(0,currentPosition.indexOf("px"))) + 25;
+            
+            alert (newpos); //180px25
+            //currentPosition = currentPosition.substr(0,) currentPosition.indexOf("px");
+ 
+           varBoat.style.left = newpos;
+           //alert (varBoat.style.left);
+
+            
+           //var pos1 = "186px";
+           //alert(pos1.substring(0, pos1.indexOf('px')));
+
+           if(newpos < 1175){
+                
+                //alert("YOU ARE THE WINNER!!!!!🏆🥇");
+            }
+            
+            
+        }
+
+                                                
+    </script>
+    </head>
+
+<body>
+    <select name="listTeam" id="listTeam">
+    <option value="1">Boat 1</option> 
+    <option value="2">Boat 2</option>
+    <option value="3">Boat 3</option>
+    <option value="4">Boat 4</option>
+    </select>
+        <br>
+    <div class="swimlane1">
+        <div id="divBoat1" class="boat1">
+            <img src="boat-vin-md.png" height="50" width="50">
+        </div>
+    </div>
+    
+    <div class="swimlane2">
+        <div id="divBoat2" class="boat2">
+            <img src="boat-vin-md.png" height="50" width="50">
+        </div>
+    </div>
+    <div class="swimlane3">
+        <div id="divBoat3" class="boat3">
+            <img src="boat-vin-md.png" height="50" width="50">
+        </div>
+    </div>
+    <div class="swimlane4">
+        <div id="divBoat4" class="boat4">
+            <img src="boat-vin-md.png" height="50" width="50">
+        </div>
+    </div>
+    <button name="btnRace" id="btnRace" class="tapButton" type="button" onclick="Race();"><h1>Tap to move your boat</h1> </button>
+    
+   
+
+    
+    
+</body>
+
+</html>

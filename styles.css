@@ -1,0 +1,79 @@
+
+.tapButton {
+    height: 200px;
+    width: 1200px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background: #FF0000;
+    padding: 20px;
+    color: white;
+    font-size: 39px;
+    
+}
+
+.boat1 {
+    position: relative;
+    left: 0px;
+    height: 50px;
+}
+
+.boat2 {
+    position: relative;
+    left: 0px;
+    height: 50px;
+}
+
+.boat3 {
+    position: relative;
+    left: 0px;
+    height: 50px;
+}
+
+.boat4 {
+    position: relative;
+    left: 0px;
+    height: 50px;
+}
+
+
+
+.swimlane1 {
+    background-color: lightcyan;
+    border-style: dashed double dashed double;
+    border-color: red;
+    border-width: 5px;
+    height: 50px;
+    width: 1200px;
+
+    
+}
+
+.swimlane2 {
+    background-color: lightblue;
+    border-style: dashed double dashed double;
+    border-color: red;
+    border-width: 5px;
+    height: 50px;
+    width: 1200px;
+    
+}
+
+.swimlane3 {
+    background-color: lightcyan;
+    border-style: dashed double dashed double;
+    border-color: red;
+    border-width: 5px;
+    height: 50px;
+    width: 1200px;
+    
+}
+
+.swimlane4 {
+    background-color: lightblue;
+    border-style: dashed double dashed double;
+    border-color: red;
+    border-width: 5px;
+    height: 50px;
+    width: 1200px;
+    
+}
